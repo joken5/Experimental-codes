@@ -1,0 +1,10 @@
+clc;
+clear;
+format long;
+I=imread('¼ÓÃÜAirplane.bmp');
+k=0.015;
+J=imnoise(I,'salt & pepper',k);
+%J=imnoise(I,'gaussian',0,0.01);
+%J=imnoise(I,'gaussian',0,0.005);
+%J=imnoise(I,'gaussian',0,0.001);
+imwrite(J,'¼ÓÃÜAirplaneÌí¼Ó0.015½·ÑÎÔëÉù.bmp');
